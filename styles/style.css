@@ -1,8 +1,20 @@
+/*   THEME AND COLOURS
+    *   Main black: #0a0a0a
+    *   Title black: #111
+    *   Title gray: #818181
+    *   Main purple: #AA00FF
+    *   
+    *   
+    */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
 
 /* Sidebar */
 .sidebar {
     height: 100%;
-    width: 25vw; /* 0 width - change this with JavaScript */
+    width: 0; /* 0 width - change this with JavaScript */
     position: fixed;
     z-index: 1;
     top: 0;
@@ -13,6 +25,11 @@
     transition: 0.5s;
 }
 
+.sidebar-invisible {
+    width: 2vw;
+    background: #0a0a0a;
+}
+
 /* The sidebar links */
 .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -20,51 +37,67 @@
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
-/*https://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/*/
+/* https://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css */
+
+/* Profile card */
 
 .centered-container {
-	
-  /*Centre container vertically and horizontally*/	
-  /* Needs to be adjusted to match content height*/
-  width: 90vw;
-  height: 90vh;
-  /**/
-  min-width: 300px;
-  max-width: 400px;
-  overflow: auto;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  
-  
-  text-align: center;
+    /*Centre container vertically and horizontally*/
+    /* Needs to be adjusted to match content height*/
+    width: 90vw;
+    height: 90vh;
+    /**/
+    min-width: 300px;
+    max-width: 400px;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    color: #111;
+}
+
+h2 {
+    font-size: 20px;
+    color: #222;
 }
 
 table {
-	width: 100%;
-	height: 15vh;
-	margin: auto;
-	border: 0px;
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    border: 0px;
     border-collapse: collapse;
 }
+
 td {
-
-	text-align: center;
-	font-size: 15px;
-	
-	width: 33%;
-	height: 33%;
-	margin: auto;
+    text-align: center;
+    font-size: 15px;
+    width: 33%;
+    height: 33%;
+    margin: auto;
     padding: 5px;
-	
-	color: black;
-	transition: /*font-size 0.2s,*/ color 0.2s;
 }
 
-td:hover {
-	color: red;
-	/*font-size: 20px;*/
-}
+    td a {
+        color: #111;
+        text-decoration: none;
+        transition: /*font-size 0.2s,*/ text-decoration, color 0.2s;
+        font-weight: 900;
+    }
+
+        td a:hover {
+            color: #AA00FF;
+            text-decoration: solid;
+            /*font-size: 20px;*/
+        }
