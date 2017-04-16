@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Juan Ferrer | Software Developer</title>
+    <title>Juan Ferrer | Projects</title>
 
-    <!--Font links-->
+    <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <!--JavaScript-->
     <script type="text/javascript" src="./js/script.js"></script>
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
 
@@ -21,8 +21,33 @@
         <a href="#">Blog</a>
     </div>
 
-    <!--Invisible sidebar, just to enable hover-->
+    <!--Small sidebar, for hover-->
     <div id="invSidebar" class="sidebar sidebar-invisible" onmouseover="openSidebar()"></div>
+
+    <!--Header section present in every main page except-->
+    <section class="header">
+        <div class="header-card">
+            <div class="header-card-portrait">
+                <img src="img\portrait.png" alt="Juan Ferrer - Software Developer" />
+            </div>
+            <div class="header-card-details">
+                <h1 class="header-card-title">Juan Ferrer</h1>
+                <h2 class="header-card-subtitle">Software Developer</h2>
+            </div>
+        </div>
+    </section>
+    <br />
+    <hr />
+
+    <!--http://www.andrewmcwatters.com/portfolio-->
+    <section class="content">
+        <div class="project-element">           
+            <a href="#" class="project-title">MolyVeux</a>
+            <a href="img/MolyVeux-03.png">
+                <img class="project-image" src="img/MolyVeux-03.png" alt="MolyVeux, molecule viewer" />
+            </a>
+        </div>
+    </section>
 
 </body>
 </html>
