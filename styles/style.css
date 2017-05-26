@@ -274,6 +274,19 @@ Projects
         .square-list li:hover div {
             opacity: 0.6;
         }
+.image-container {
+    width: 100%;
+}
+
+.centered-image {
+    width: 50%;
+    margin: auto;
+
+}
+
+.main-text {
+
+}
 
 /*.project-element {
     position: relative;
