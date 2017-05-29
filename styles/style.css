@@ -27,6 +27,7 @@ body {
 
 /* Links */
 /* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+/* https://www.smashingmagazine.com/2010/02/the-definitive-guide-to-styling-web-links/ */
 a.underlined {
     color: var(--title-black);
     text-decoration: none;
