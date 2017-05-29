@@ -17,7 +17,8 @@ General
     --title-black: #111;
     --subtitle-black: #222;
     --main-gray: #818181;
-    --main-purple: #4A148C;
+    --main-purple: #7620df;
+    --dark-purple: #4A148C;
 }
 
 body {
@@ -25,22 +26,50 @@ body {
 }
 
 /* Links */
-a {
+/* http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+a.underlined {
     color: var(--title-black);
     text-decoration: none;
-    transition: /*font-size 0.2s,*/ text-decoration, color 0.2s;
+    transition: /*font-size 0.2s,*/ text-decoration, color 0.5s;
     font-weight: 900;
+    position: relative;
+    padding: 5px;
 }
 
-    a:hover {
+    a.underlined:hover, a.underlined:visited:hover {
         color: var(--main-purple);
-        text-decoration: solid;
         /*font-size: 20px;*/
     }
+
+a.underlined:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-purple);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+a.underlined:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+a.underlined:visited {
+    color: var(--dark-purple);
+}
 
 /* Horizontal rule */
 hr {
     width: 60%;
+    max-width: 750px;
     color: var(--main-gray);
     background-color: var(--main-gray);
     height: 1px;
@@ -274,18 +303,43 @@ Projects
         .square-list li:hover div {
             opacity: 0.6;
         }
-.image-container {
-    width: 100%;
-}
 
-.centered-image {
+/*********************************************************************
+Project article
+*********************************************************************/
+
+        .article-title {
+            font-weight: bold;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .download-link {
+
+        }
+
+.column {
+    margin: 0 auto 0 auto;
     width: 50%;
-    margin: auto;
-
+    max-width: 700px;
 }
 
 .main-text {
+    text-align: justify;
+}
+        
+.image-container {
+    width: 100%;
+    padding: auto;
+}
 
+    .image-container img {
+        display: block;
+        margin: auto, 0;
+    }
+
+.centered-image {
+    max-width: 100%;
 }
 
 /*.project-element {
