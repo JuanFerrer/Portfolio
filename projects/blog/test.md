@@ -11,7 +11,7 @@ blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
 
 blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
 
-[Test picture](https://i.pinimg.com/originals/f9/82/d5/f982d5879eb9d28ddec2ab97058413bf.jpg)
+![Test picture](https://i.pinimg.com/originals/f9/82/d5/f982d5879eb9d28ddec2ab97058413bf.jpg)
 
 blah blah blah blah blah blah blah blah blah blah blah blah blah blah
 
@@ -106,7 +106,7 @@ Needs a sentence and a `var`
 	}
 </style>
 <script>
-	document.getElementByClassName("loopy")[0].addEventListener("click", function() {
+	document.getElementsByClassName("loopy")[0].addEventListener("click", function() {
 		alert("Pretty cool, uh?");
 	});
 </script>
