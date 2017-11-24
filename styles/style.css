@@ -4,8 +4,8 @@
     *   Second header black: #222
     *   Main gray: #818181
     *   Main purple: #4A148C
-    *   
-    *   
+    *
+    *
     */
 
 /*********************************************************************
@@ -37,12 +37,12 @@ a.underlined {
     padding: 5px;
 }
 
-    a.underlined:hover, a.underlined:visited:hover {
-        color: var(--main-purple);
-        /*font-size: 20px;*/
-    }
+a.underlined:hover, a.underlined:visited:hover {
+	color: var(--main-purple);
+	/*font-size: 20px;*/
+}
 
-a.underlined:before{
+a.underlined::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -52,19 +52,26 @@ a.underlined:before{
     background-color: var(--main-purple);
     visibility: hidden;
     -webkit-transform: scaleX(0);
-    transform: scaleX(0);
+	transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
 
-a.underlined:hover:before{
+a.underlined:hover::after {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-a.underlined:visited {
-    color: var(--dark-purple);
+.center-underlined::after {
+	left: -10px;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+}
+
+.sidebar-underlined::after {
+	-webkit-transform-origin: left;
+	transform-origin: left;
 }
 
 /* Horizontal rule */
@@ -328,7 +335,7 @@ Project article
 .main-text {
     text-align: justify;
 }
-        
+
 .image-container {
     width: 100%;
     padding: auto;
