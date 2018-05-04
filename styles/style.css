@@ -1,16 +1,4 @@
-/*   THEME AND COLOURS
-    *   Main black: #0a0a0a
-    *   Header black: #111
-    *   Second header black: #222
-    *   Main gray: #818181
-    *   Main purple: #4A148C
-    *
-    *
-    */
-
-/*********************************************************************
-General
-*********************************************************************/
+/* #region General */
 
 :root {
 	--main-black: #0a0a0a;
@@ -19,6 +7,7 @@ General
 	--main-gray: #818181;
 	--main-purple: #7620df;
 	--dark-purple: #4A148C;
+	/* language colors */
 	--javascript-language-color: #f1e05a;
 	--cs-language-color: #178600;
 	--cpp-language-color: #f34b7d;
@@ -28,6 +17,8 @@ General
 body {
 	font-family: 'Lato', sans-serif;
 }
+
+/* #endregion */
 
 /* #region Links */
 
