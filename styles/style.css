@@ -16,6 +16,14 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
 }
 
 /* #endregion */
@@ -69,8 +77,8 @@ a.underlined:hover::after {
 }
 
 .sidebar-underlined::after {
-    -webkit-transform-origin: left;
-    transform-origin: left;
+    -webkit-transform-origin: right;
+    transform-origin: right;
 }
 
 /* #endregion */
@@ -174,19 +182,18 @@ hr {
 .centered-container {
     /*Centre container vertically and horizontally*/
     /* Needs to be adjusted to match content height*/
-    width: 90vw;
-    height: 70vh;
+    width: 20%;
+    height: 70%;
     min-height: 700px;
-    /**/
     min-width: 300px;
     max-width: 400px;
     overflow: auto;
-    margin: auto;
+    /*margin: auto;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
+    right: 0;*/
     text-align: center;
 }
 
