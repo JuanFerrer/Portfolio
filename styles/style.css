@@ -86,7 +86,7 @@ a.underlined:hover::after {
 /* #region Horizontal rule */
 
 hr {
-    width: 60%;
+    width: 50vw;
     max-width: 750px;
     color: var(--main-gray);
     background-color: var(--main-gray);
@@ -136,11 +136,23 @@ hr {
 
 /* #region Header card */
 
+.header {
+    position: absolute;
+    top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     width: 40vw;
     min-width: 300px;
     max-width: 350px;
-    margin: auto;
     height: 10vh;
     min-height: 80px;
 }
@@ -151,14 +163,11 @@ hr {
 }
 
 .header-card-portrait {
-    float: left;
     height: inherit;
-    min-height: inherit;
     vertical-align: middle;
 }
 
 .header-card-details {
-    float: right;
     height: inherit;
     min-height: inherit;
 }
