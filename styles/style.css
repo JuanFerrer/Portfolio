@@ -231,14 +231,14 @@ h2 {
 
 .profile-links-row {
     display: flex;
-    width: 100%;
+    width: 90%;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .profile-links-row div {
-    width: 33%;
+    /* width: 33%; */
 }
 
 /* #endregion */
