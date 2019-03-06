@@ -189,22 +189,32 @@ hr {
 
 /* Profile card */
 
-.centered-container {
-    /*Centre container vertically and horizontally*/
-    /* Needs to be adjusted to match content height*/
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 20%;
-    height: 70%;
-    min-height: 700px;
+    height: 60%;
     min-width: 300px;
     max-width: 400px;
     overflow: auto;
-    /*margin: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;*/
     text-align: center;
+}
+
+.profile-card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-card-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--title-black);
+}
+
+.profile-card-subtitle {
+    font-size: 30px;
+    color: var(--subtitle-black);
 }
 
 .profile-card-portrait img {
@@ -231,14 +241,16 @@ h2 {
 
 .profile-links-row {
     display: flex;
-    width: 90%;
+    width: 70%;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
-.profile-links-row div {
-    /* width: 33%; */
+@media only screen and (max-width: 600px) {
+    .profile-links-row {
+        width: 90%;
+    }
 }
 
 /* #endregion */
