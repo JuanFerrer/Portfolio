@@ -219,6 +219,7 @@ hr {
 
 .profile-card-portrait img {
     width: 250px;
+    border-radius: 200px;
 }
 
 h1 {
