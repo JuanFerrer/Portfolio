@@ -161,6 +161,7 @@ hr {
 .header-card img {
     height: inherit;
     min-height: inherit;
+    border-radius: 200px;
 }
 
 .header-card-portrait {
