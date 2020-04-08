@@ -1,6 +1,4 @@
----
-permalink: /404.html
----
+#permalink: /404.html
 
 # Folders with dotfiles are ignored by default.
 include: [.well-known]
