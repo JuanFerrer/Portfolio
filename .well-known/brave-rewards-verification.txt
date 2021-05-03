@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: juanferrer.dev
+Token: 808bd07c3d94eebe0ebd98ec43020471078abb44e204ba9da441f61a91a9484c
